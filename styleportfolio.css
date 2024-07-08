@@ -1,0 +1,726 @@
+body{
+	margin: 0;
+	background: linear-gradient(to bottom right,#FFFFFF,#D9D9D9);
+}
+h1{
+	font-family: Montserrat Subrayada;
+	text-align: center;
+	color:white;
+	font-size: 4em;
+	margin-top: 0.1em;
+	
+}
+h2{
+	font-family: raleway;
+	text-align: center;
+	color: white;
+	font-size: 3em;
+	text-decoration: underline;
+	margin-top: -0.5em;
+}
+h3{
+	font-family: raleway;
+	text-align: center;
+	color: white;
+	font-size: 2em
+}
+
+h4{
+	color: #284B63;
+	font-size: 1em;
+}
+h5{
+	font-family: raleway;
+	text-align: center;
+	color: #3C6E71;
+	font-size: 2em
+}
+p{
+	font-family: raleway;
+	color: white;
+	font-size: 1em
+	}
+a{
+	font-family: raleway;
+	color: white;
+	font-size: 1em
+	text-align: center;
+}
+ul{
+	color: white;
+	font-family: raleway;
+}
+ol{
+	color: white;
+	font-family: raleway;
+}
+li{
+	margin-top: 1.3em;
+}
+
+
+em{
+	font-style: italic;
+}
+/*Ci dessous les déclarations pour les classes tranversales A TOUTES LES PAGES DU PORTFOLIO*/
+.definition{
+	font-style: italic;
+	background-color:#D9D9D9;
+	color: #3C6E71;	
+}
+.fonddutitre{
+	height: 110px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image:url("banniere.jpg");
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 60px;
+	border-bottom: solid;
+	border-top: solid;
+	border-bottom-color:#284B63;
+	border-top-color: #284B63;
+	}
+.containernav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.bouton{
+	background-color: #D9D9D9;
+    color: #3C6E71;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+	text-decoration: none;
+	border: solid;
+	border-color: #284B63;
+	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.bouton:hover{
+	background-color:#FEFCFB;
+	color: #034078;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border: solid;
+	border-color: #fb5607;
+}
+.coordonnées{
+	text-align: center;
+	font-size: 0.7em;
+	margin-bottom: 0.1em;
+	margin-top: 0.1em;
+	color: #353535;
+}
+.mail{
+	text-align: center;
+}
+
+.fonddumain{
+	background: linear-gradient(to bottom right,#3C6E71,#61a5c2);
+	border: solid;
+	border-color: #284B63;
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-right: 35px;
+	margin-bottom: 30px;
+	margin-left: 35px;
+	padding: 15px;
+}
+
+.petittexte{
+	font-family: raleway;
+	color: white;
+	font-size: 0.8em;
+}
+.grandtexte{
+	font-family: raleway;
+	color: white;
+	font-size: 2em;
+}
+/*Ci dessous les déclarations pour les classes de la page MA RECONVERSION PROFESSIONNELLE*/
+.mesmotivations{
+	text-align:justify;
+	margin-top: 20px;
+	margin-right: 75px;
+	margin-bottom: 20px;
+	margin-left: 75px;
+	border-bottom: solid;
+	border-right: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+.containersitesressource{
+	display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.boutonsitesressource{
+	background-color: #D9D9D9;
+    color: #3C6E71;
+    padding: 10px 20px;
+	margin: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+	text-decoration: none;
+	border: solid;
+	border-color: #284B63;
+	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.boutonsitesressource:hover{
+	background-color:#FEFCFB;
+	color: #034078;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-color: #3C6E71;
+	border: solid
+}
+
+.containersitesreconversion{
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: 100px 150px 150px 150px 100px 100px 100px 100px ;
+	grid-template-areas:
+	"titrereconversion1 titrereconversion1 titrereconversion1 titrereconversion1 titrereconversion1 titrereconversion1 titrereconversion1 titrereconversion1 "
+	"sitereco1          sitereco1          sitereco2          sitereco2          sitereco2          sitereco2          sitereco2          sitereco2          "
+	"sitereco3          sitereco3          sitereco4          sitereco4          sitereco4          sitereco4          sitereco4          sitereco4          "
+	".                  .                  .                  .                  .                  .                  .                  .                  "
+	"titrereconversion2 titrereconversion2 titrereconversion2 titrereconversion2 titrereconversion2 titrereconversion2 titrereconversion2 titrereconversion2 "
+	"siteform1          siteform1          siteform2          siteform2          siteform2          siteform2          siteform2          siteform2          "
+	"siteform3          siteform3          siteform4          siteform4          siteform4          siteform4          siteform4          siteform4          "
+	"siteform5          siteform5          siteform6          siteform6          siteform6          siteform6          siteform6          siteform6          ";
+	gap:10px;
+	padding: 10px;
+}	
+.titrereconversion1{
+	grid-area:titrereconversion1 ;
+	background-color: #D9D9D9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+ 
+ .sitereco1 {
+	overflow: hidden;
+	grid-area:sitereco1 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+ }
+ 
+  .sitereco1:hover{
+	overflow: hidden;
+	grid-area:sitereco1 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #034078;
+	background-color: white;
+	border-radius: 10px;
+	border: solid;
+	border-color: #fb5607;
+ }
+ 
+.sitereco2{
+	grid-area:sitereco2 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+
+.sitereco3 {
+		overflow: hidden;
+	grid-area:sitereco3 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+ }
+ 
+  .sitereco3:hover{
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #034078;
+	background-color: white;
+	border-radius: 10px;
+	border: solid;
+	border-color: #fb5607;
+ }
+    
+.sitereco4{
+	grid-area:sitereco4 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+
+.titrereconversion2{
+	grid-area:titrereconversion2 ;
+	background-color: #D9D9D9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+.siteform1{
+	grid-area:siteform1 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+    
+.siteform2{
+	grid-area:siteform2 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+.siteform3{
+	grid-area:siteform3 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+.siteform4{
+	grid-area:siteform4 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+.siteform5{
+	grid-area:siteform5 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+.siteform6{
+	grid-area:siteform6 ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+
+/*Ci dessous les déclarations pour les classes de la page LES METIERS DU WEB*/
+.containerlesmetiersduweb {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 350px 100px 200px 300px 1700px 300px 1700px 300px 1700px 300px 1300px 100px ;
+	grid-template-areas:
+	"boxcartographie1 boxcartographi2 boxcartographi2 boxcartographi2 boxcartographi2 boxcartographi2 boxcartographi2 boxcartographi2 "
+	"bxtitremetiers  bxtitremetiers  bxtitremetiers  bxtitremetiers  bxtitremetiers  bxtitremetiers  bxtitremetiers  bxtitremetiers "
+	"intrometiers    intrometiers    intrometiers    intrometiers    intrometiers    intrometiers    techno          techno         "
+	"photoitw1       photoitw1       itw1            itw1            itw1            itw1            itw1            itw1           "
+	".                .              itw1            itw1            itw1            itw1            itw1            itw1           "
+	"itw2            itw2            itw2            itw2            itw2            itw2            photoitw2       photoitw2      "
+	"itw2            itw2            itw2            itw2            itw2            itw2            .               .              "
+	"photoitw3       photoitw3       itw3            itw3            itw3            itw3            itw3            itw3           "
+	".               .               itw3            itw3            itw3            itw3            itw3            itw3           "
+	"itw4            itw4            itw4            itw4            itw4            itw4            photoitw4       photoitw4      "
+	"itw4            itw4            itw4            itw4            itw4            itw4            .               .              "
+	"cclenquete      cclenquete      cclenquete      cclenquete      cclenquete      cclenquete      cclenquete      cclenquete     "
+	;
+	padding: 20px;
+	gap:20px;
+}
+
+.bxtitremetiers {
+	color: #3C6E71;
+	grid-area:bxtitremetiers ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	background-color: #D9D9D9;
+	
+}
+
+
+.boxcartographie1 img {
+	max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du conteneur */
+	max-height: 100%; /* S'assure que l'image ne dépasse pas la hauteur du conteneur */
+	width: auto; /* Conserve le ratio de l'image */
+	height: auto; /* Conserve le ratio de l'image */
+	grid-area:boxcartographie1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
+
+.boxcartographi2{
+	grid-area:boxcartographi2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: solid;
+	border-right: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+}
+.intrometiers{
+	grid-area:intrometiers;
+	text-align:justify;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: solid;
+	border-right: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+	
+}
+.techno{
+	grid-area:techno;
+	background-image:url("technopole.jpg");
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
+.explicrncp {
+	grid-area:explicrncp;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
+.photoitw1 img {
+	max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du conteneur */
+	max-height: 100%; /* S'assure que l'image ne dépasse pas la hauteur du conteneur */
+	width: auto; /* Conserve le ratio de l'image */
+	height: auto; /* Conserve le ratio de l'image */
+	grid-area:photoitw1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.photoitw1 {
+	grid-area:photoitw1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
+.photoitw2 img {
+	max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du conteneur */
+	max-height: 100%; /* S'assure que l'image ne dépasse pas la hauteur du conteneur */
+	width: auto; /* Conserve le ratio de l'image */
+	height: auto; /* Conserve le ratio de l'image */
+	grid-area:photoitw2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.photoitw2 {
+	grid-area:photoitw2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
+.photoitw3 img {
+	max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du conteneur */
+	max-height: 100%; /* S'assure que l'image ne dépasse pas la hauteur du conteneur */
+	width: auto; /* Conserve le ratio de l'image */
+	height: auto; /* Conserve le ratio de l'image */
+	grid-area:photoitw3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.photoitw3 {
+	grid-area:photoitw3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
+.photoitw4 img {
+	max-width: 100%; /* S'assure que l'image ne dépasse pas la largeur du conteneur */
+	max-height: 100%; /* S'assure que l'image ne dépasse pas la hauteur du conteneur */
+	width: auto; /* Conserve le ratio de l'image */
+	height: auto; /* Conserve le ratio de l'image */
+	grid-area:photoitw4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.photoitw4 {
+	grid-area:photoitw4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
+.itw1{
+	grid-area:itw1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 30px;
+}
+.itw2{
+	grid-area:itw2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+.itw3{
+	grid-area:itw3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+.itw4{
+	grid-area:itw4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	padding: 20px;
+}
+.cclenquete{
+	grid-area:cclenquete;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
+
+
+/*Ci dessous les déclarations pour les classes de la page MES COMPETENCES EN DEVELOPPEMENT*/
+.containermescompétences{
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 30px 80px 120px 30px 80px 120px 30px 80px 120px 100px 100px;
+	grid-template-areas:
+	"boxcompetences1 boxcompetences2"
+	"boxcompetences1 boxcompetences3"
+	"boxcompetences1 boxcompetences4"
+	"boxcompetences5 boxcompetences6"
+	"boxcompetences5 boxcompetences7"
+	"boxcompetences5 boxcompetences8"
+	"boxcompetences9 boxcompetences10"
+	"boxcompetences9 boxcompetences11"
+	"boxcompetences9 boxcompetences12"
+	"boxcompetences13 boxcompetences13"
+	"boxcompetences14 boxcompetences14";
+	gap:10px;
+}
+
+.containermescompétences img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.boxcompetences1{
+	grid-area:boxcompetences1;
+	border-color: #284B63;
+}
+.boxcompetences2{
+	grid-area:boxcompetences2;
+	display: flex;
+	text-align: justify;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+.boxcompetences3{
+	grid-area:boxcompetences3;
+	display: flex;
+	text-align: justify;
+	align-items: center;
+	padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.boxcompetences4{
+	grid-area:boxcompetences4;
+	display: flex;
+	text-align: justify;
+	align-items: center;
+	padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-image:url("exemplecodehtml.png");
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	margin-bottom: 40px;
+}
+.boxcompetences5{
+	grid-area:boxcompetences5;
+	border-color: #284B63;
+}
+
+.boxcompetences6{
+	grid-area:boxcompetences6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.boxcompetences7{
+	grid-area:boxcompetences7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+.boxcompetences8{
+	grid-area:boxcompetences8;
+	display: flex;
+	text-align: justify;
+	align-items: center;
+	padding: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-image:url("exemplecodecss.png");
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+	margin-bottom: 40px;
+}
+
+.boxcompetences9{
+	grid-area:boxcompetences9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-color: #284B63;
+}
+.boxcompetences10{
+	grid-area:boxcompetences10;
+	display: flex;
+	justify-content: center;
+	align-items: center;}
+
+.boxcompetences11{
+	grid-area:boxcompetences11;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.boxcompetences12{
+	grid-area:boxcompetences12;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
+.boxcompetences13{
+	grid-area:boxcompetences13;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
+.boxcompetences14{
+	grid-area:boxcompetences14;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid;
+	border-radius: 10px;
+	border-color: #284B63;
+}
