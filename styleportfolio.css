@@ -582,18 +582,22 @@ em{
 	padding: 10px;
 	display: grid;
 	grid-template-columns: 1fr 4fr;
-	grid-template-rows: 30px 80px 120px 30px 80px 120px 30px 80px 120px 100px 100px;
+	grid-template-rows: 30px 80px 120px 20px 30px 80px 120px 20px 30px 80px 120px 20px  100px 20px 100px;
 	grid-template-areas:
 	"boxcompetences1 boxcompetences2"
 	"boxcompetences1 boxcompetences3"
 	"boxcompetences1 boxcompetences4"
+    ".               .              "
 	"boxcompetences5 boxcompetences6"
 	"boxcompetences5 boxcompetences7"
 	"boxcompetences5 boxcompetences8"
+    ".               .              "
 	"boxcompetences9 boxcompetences10"
 	"boxcompetences9 boxcompetences11"
 	"boxcompetences9 boxcompetences12"
+    ".               .              "
 	"boxcompetences13 boxcompetences13"
+    ".               .              "
 	"boxcompetences14 boxcompetences14";
 	gap:10px;
 }
