@@ -23,7 +23,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: : 50vw; /* Le texte occupera 8% de la largeur de la fenêtre */
+    font-size: : 5vw; /* Le texte occupera 8% de la largeur de la fenêtre */
     font-weight: bold;
     text-align: center;
     text-shadow: 1px 1px 8px black;
@@ -35,7 +35,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 40vw; /* Le texte occupera 8% de la largeur de la fenêtre */
+    font-size: 4vw; /* Le texte occupera 8% de la largeur de la fenêtre */
     text-align: center;
     text-shadow: 1px 1px 8px black;
 }
