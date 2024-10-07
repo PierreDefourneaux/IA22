@@ -42,10 +42,10 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: font-size: clamp(1.5rem, 4vw, 3rem);
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
-}
+    font-size: font-size : clamp(1.5rem, 4vw, 3rem);
+    text-align : center;
+    text-shadow : 1px 1px 2px black;
+    }
 
 .petit-titre {
     display: none;
@@ -140,7 +140,6 @@ p{
 	border: solid;
 	border-color: #000000;
 }
-<<<<<<< HEAD
 
 main{
     padding: 40px ; 
@@ -152,5 +151,3 @@ footer * {
 	font-size: 1em;
     text-align: center;
 }
-=======
->>>>>>> 9d5c1714c3df50ebe2f6c0450b277ace7fb2b630
