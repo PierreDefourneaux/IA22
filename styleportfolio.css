@@ -39,13 +39,14 @@ p{
 	font-family: raleway;
 	color: white;
 	font-size: 1em
-	}
+}
 a{
 	font-family: raleway;
 	color: white;
-	font-size: 1em
+	font-size: 1em;
 	text-align: center;
 }
+
 ul{
 	color: white;
 	font-family: raleway;

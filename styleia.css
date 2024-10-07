@@ -5,6 +5,13 @@
     text-align: center;
 	}
 
+p{
+    font-family: raleway;
+	color: rgb(62, 58, 47);
+	font-size: 1em;
+    text-align: center;
+}
+
 .banner-container {
             position: relative;
             width: 100%;
@@ -23,21 +30,37 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3em;
+    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: bold;
     text-align: center;
     text-shadow: 1px 1px 8px black;
     }
 
-.banner-subtitle {
+.grand-titre {
     position: absolute;
     top: 60%; /* Place le sous-titre plus bas, sous le titre principal */
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 1.5em;
+    font-size: font-size: clamp(1.5rem, 4vw, 3rem);
     text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.petit-titre {
+    display: none;
+}
+
+/* Sur les petits écrans, on masque le titre normal et on affiche le titre mobile */
+@media (max-width: 768px) {
+.grand-titre {
+    display: none;
+}
+.petit-titre {
+    display: block;
+    color: white;
     text-shadow: 1px 1px 8px black;
+}
 }
 
 .nav-container{
@@ -47,9 +70,11 @@
     flex-wrap: wrap;
     justify-content:space-between;
 }
-.bouton{
-	background-color: #000000;
-    color: #ffffff;
+
+.nav-container a {
+	background: linear-gradient(45deg, rgba(42, 99, 173, 0.74), rgb(247, 233, 202));
+    color: white;
+    text-shadow: 4px 4px 5px black;
     padding: 15px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -60,23 +85,69 @@
     flex-grow: 1; /* Permet au bouton de s'étendre */
     flex-basis: 20%; /* Chaque bouton prend 25% de la largeur du conteneur */
     margin: 10px; /* Ajoute de l'espace autour des boutons */
-    transition: all 2s ease; /* Ajoute la transition pour l'effet doux */
+    transition: all 1.2s ease; /* Ajoute la transition pour l'effet doux */
     min-height: 70px; /* Définit une hauteur minimale pour chaque bouton */
 }
+.bouton1:hover{
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ajouter une ombre lors du survol */
+    background-image: url('01.jpg');
+    background-size: cover; /* Couvre tout le bouton */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
 
+.bouton2:hover{
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ajouter une ombre lors du survol */
+    background-image: url('02.jpg');
+    background-size: cover; /* Couvre tout le bouton */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+
+.bouton3:hover{
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ajouter une ombre lors du survol */
+    background-image: url('03.jpg');
+    background-size: cover; /* Couvre tout le bouton */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+
+.bouton4:hover{
+    transform: scale(1.1); /* Agrandir légèrement au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ajouter une ombre lors du survol */
+    background-image: url('04.jpg');
+    background-size: cover; /* Couvre tout le bouton */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
 @media (max-width: 768px) {
     .bouton {
         flex-basis: 100%; /* Chaque bouton prend toute la largeur sur les petits écrans */
         min-height: 60px; /* Peut ajuster la hauteur minimale pour le mobile */
     }
 }
-.bouton:hover{
+.nav-container a:hover{
 	background-color:#FEFCFB;
-	color: #000000;
+	color: white;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
 	border-bottom-right-radius:5px;
 	border-bottom-left-radius:5px;
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 	border: solid;
 	border-color: #000000;
+}
+
+main{
+    padding: 40px ; 
+}
+
+footer * {
+    font-family: raleway;
+	color: rgb(62, 58, 47);
+	font-size: 1em;
+    text-align: center;
 }
